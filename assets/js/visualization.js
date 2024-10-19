@@ -1,5 +1,5 @@
 // Load the data
-d3.json("/assets/data/clip_data_short.json").then(function(data) {
+d3.json("https://raw.githubusercontent.com/gggdttt/CLIP_exp_viz/refs/heads/master/assets/data/clip_data_short.json").then(function(data) {
   // Initialize variables
   var points = []; // Array to store all points
   var babelTexts = new Set(); // Set to store unique babel texts
