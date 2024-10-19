@@ -1,0 +1,31 @@
+---
+layout: default
+title: Data Visualization
+---
+
+<h1>CLIP Embeddings Visualization</h1>
+
+<div id="controls">
+  <div style="margin-bottom: 20px;"> <!-- Add margin to separate the dropdowns -->
+    <label for="babelDropdown" style="margin-bottom: -5px;">Select BABEL Text:</label>
+    <div id="babelDropdown"></div>
+    <div id="humanml3dTexts"></div>
+  </div>
+  <div style="margin-bottom: 20px;"> <!-- Add margin to separate the dropdowns -->
+    <label for="humanml3dDropdown" style="margin-bottom: -5px;">Select HumanML3D Text:</label>
+    <div id="humanml3dDropdown"></div>
+    <div id="babelTexts"></div>
+  </div>
+</div>
+
+<button id="showAllPoints" style="margin-top: 20px;">Show All Points</button>
+
+<div id="tooltip" style="position: absolute; visibility: hidden; background-color: lightgray; padding: 10px; border-radius: 5px; font-size: 12px;"></div>
+
+<div id="embedding_viz"></div>
+
+<!-- Include D3.js -->
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<!-- Include your JavaScript code -->
+<script src="{{ site.baseurl }}/assets/js/embedding_viz.js"></script>
