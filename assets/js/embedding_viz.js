@@ -267,7 +267,7 @@
   
 
   // Putting It All Together
-  d3.json("/assets/data/clean_babel_humanml3d_kitml_embedding.json").then(function(data) {
+  d3.json("/CLIP_exp_viz/visualization/assets/data/clean_babel_humanml3d_kitml_embedding.json").then(function(data) {
     // Process data
     var { points, babelTextList, humanml3dTextList, babelTextToColor } = processData(data);
   
